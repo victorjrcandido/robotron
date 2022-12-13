@@ -30,6 +30,67 @@ main {
   gap: 1vw;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2em;
+  float: right;
+}
+
+button {
+  text-align: center;
+  height: 30px;
+  width: 35px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.2em 1em;
+  border: 3px solid var(--main-branco);
+  cursor: pointer;
+}
+
+.btn-black {
+  background-color: black;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.btn-pink {
+  background-color: pink;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-white {
+  background-color: white;
+}
+
+.btn-yellow {
+  background-color: yellow;
+}
+
+.producao {
+  margin-top: 0.2em;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 0.2em 1em;
+  float: right;
+  border: 3px solid var(--main-branco);
+  background: var(--main-branco);
+  clip-path: polygon(
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0 0
+  );
+  cursor: pointer;
+}
+
 .robotron {
   background: url(../img/estrutura.png) no-repeat;
   background-position: center center;
@@ -139,24 +200,6 @@ main {
 
 .linha {
   border-color: var(--main-cinza);
-}
-
-.producao {
-  margin-top: 1em;
-  font-size: 2em;
-  text-transform: uppercase;
-  padding: 0.2em 1em;
-  float: right;
-  border: 3px solid var(--main-branco);
-  background: var(--main-branco);
-  clip-path: polygon(
-    100% 0,
-    100% calc(100% - 30px),
-    calc(100% - 30px) 100%,
-    0 100%,
-    0 0
-  );
-  cursor: pointer;
 }
 
 .producao:hover {

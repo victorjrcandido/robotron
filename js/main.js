@@ -1,6 +1,8 @@
 const controle = document.querySelectorAll("[data-controle]");
 const estatisticas = document.querySelectorAll("[data-estatistica]");
-console.log(estatisticas);
+const botaoCor = document.querySelectorAll("[data-btn]");
+const fotoRobo = document.querySelector(".robo");
+
 const pecas = {
   bracos: {
     forca: 29,
@@ -57,3 +59,14 @@ function atualizaEstatisticas(peca) {
       parseInt(element.textContent) + pecas[peca][element.dataset.estatistica];
   });
 }
+
+function mudarCorRobo(botaoCor) {
+  document.querySelector(".robo").src =
+    "img/Robotron/Robotron 2000 - " + botaoCor + ".png";
+}
+
+botaoCor.forEach((element) => {
+  element.addEventListener("click", () => {
+    mudarCorRobo(element.dataset.btn);
+  });
+});
